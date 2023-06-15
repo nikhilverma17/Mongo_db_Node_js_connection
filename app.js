@@ -1,7 +1,8 @@
 const mongodb = require('mongodb');
 const MongoClient = mongodb.MongoClient;
 async function main() {
-  const uri = "mongodb+srv://iamvermanikhil:burger20@newdatabase.iy7zrhl.mongodb.net/?retryWrites=true&w=majority";
+  // edit username,password and cluster name
+  const uri = "mongodb+srv://<username>:<password>@<clustername>.iy7zrhl.mongodb.net/?retryWrites=true&w=majority";
   const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
   try {
