@@ -1,7 +1,10 @@
 const mongodb = require('mongodb');
 const MongoClient = mongodb.MongoClient;
 async function main() {
-  // edit username,password and cluster name
+  // edit username,password, and cluster name
+  // for local server 
+  // const uri = "mongodb://127.0.0.1:27017/newdb2";
+  //for Mongo Atlas
   const uri = "mongodb+srv://<username>:<password>@<clustername>.iy7zrhl.mongodb.net/?retryWrites=true&w=majority";
   const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
